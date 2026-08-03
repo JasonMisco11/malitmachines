@@ -1,0 +1,6 @@
+{
+  "name": "TCS Cleaning Services",
+  "description": "Premier cleaning service booking portal and executive admin dashboard for Ture Cleaning Services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
