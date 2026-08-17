@@ -288,7 +288,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-sm text-[#999] leading-relaxed max-w-xs">
-                Your trusted source for quality sewing machines. Serving tailors, designers, and home sewers for over 15 years.
+                Your trusted source for quality sewing machines. Serving tailors, designers, and home sewers for over 20 years.
               </p>
             </div>
             <div>
