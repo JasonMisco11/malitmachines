@@ -38,7 +38,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-gradient texture-overlay relative pt-28 pb-20 sm:pt-36 sm:pb-28 lg:pt-44 lg:pb-36">
+      <section className="hero-gradient texture-overlay relative pt-28 pb-20 sm:pt-36 sm:pb-28 lg:pt-44 lg:pb-36" style={{ backgroundImage: 'linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.95)), url(/api/hero)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
           <div className="max-w-2xl">
             
