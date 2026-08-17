@@ -321,7 +321,7 @@ export default function Home() {
                     <circle cx="12" cy="12" r="10"/>
                     <polyline points="12 6 12 12 16 14"/>
                   </svg>
-                  Mon — Sat: 8:00 AM – 6:00 PM
+                  Mon - Sat: 8:00 AM – 6:00 PM
                 </li>
               </ul>
             </div>
