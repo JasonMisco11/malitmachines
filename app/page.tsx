@@ -1,5 +1,11 @@
 export default function Home() {
-  const galleryItems = Array.from({ length: 40 }, (_, i) => i + 1);
+  const galleryItems = [
+    '/images/mm1.webp',
+    '/images/mm3.webp',
+    '/images/mm2.webp',
+    '/images/photo_5771629550210060536_x.jpg'
+  ];
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans">
@@ -165,17 +171,16 @@ export default function Home() {
             </p>
           </div>
           <div className="gallery-grid">
-            {galleryItems.map((item) => (
-              <div key={item} className="gallery-item group">
-                <div className="gallery-placeholder">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                    <polyline points="21 15 16 10 5 21"/>
-                  </svg>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white text-xs font-medium drop-shadow-lg">Machine #{item}</span>
+            {galleryItems.map((src, index) => (
+              <div key={index} className="gallery-item group relative overflow-hidden bg-[#e5e5e5]">
+                <img 
+                  src={src} 
+                  alt={`Sewing Machine ${index + 1}`} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <span className="text-white text-sm font-medium drop-shadow-lg">Machine #{index + 1}</span>
                 </div>
               </div>
             ))}
