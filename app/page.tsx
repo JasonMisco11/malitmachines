@@ -48,7 +48,7 @@ export default function Home() {
               You Can Trust
             </h1>
             <p className="text-lg sm:text-xl text-white/70 leading-relaxed mb-10 max-w-lg">
-              From industrial workhorses to home essentials — find the perfect machine for every stitch, hem, and creation.
+              From industrial workhorses to home essentials - find the perfect machine for every stitch, hem, and creation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:+23344749719 " className="btn-primary !text-base !py-4 !px-8">
