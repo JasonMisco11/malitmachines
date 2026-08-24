@@ -43,9 +43,9 @@ export default function Home() {
 
             {/* Desktop Categories */}
             <div className="hidden lg:flex items-center gap-8 text-[13px] font-bold tracking-wider text-[#1a1a1a] uppercase">
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Domestic</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Industrial</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Overlockers</a>
+              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Manual</a>
+              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Electric</a>
+              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Knitting</a>
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Parts</a>
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Accessories</a>
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Deals</a>
@@ -83,7 +83,12 @@ export default function Home() {
               <a href="#" className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center">
                 Find Out More
               </a>
-              <a href="#" className="bg-[#222] hover:bg-[#333] border border-[#333] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center">
+              <a 
+                href={`https://wa.me/233244749719?text=${encodeURIComponent("Hello Malit Machines, I would like to inquire about your sewing machines.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#222] hover:bg-[#333] border border-[#333] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center"
+              >
                 Inquire Now
               </a>
             </div>
@@ -105,42 +110,42 @@ export default function Home() {
           <a href="#" className="group block relative h-64 bg-[#222] overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/40 z-10 transition-colors group-hover:bg-black/20" />
             <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-white text-2xl font-bold mb-3">DOMESTIC</h3>
+              <h3 className="text-white text-2xl font-bold mb-3">MANUAL</h3>
               <div className="flex items-center text-white/80 text-sm font-semibold tracking-wide uppercase group-hover:text-white transition-colors">
                 <span className="w-4 h-[2px] bg-[#ab8b65] mr-3"></span>
                 View Products
               </div>
             </div>
             <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-              <img src="/images/mm2.webp" className="w-full h-full object-contain opacity-80" alt="Domestic" />
+              <img src="/images/mm2.webp" className="w-full h-full object-contain opacity-80" alt="Manual" />
             </div>
           </a>
 
           <a href="#" className="group block relative h-64 bg-[#c8102e] overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/10 z-10 transition-colors group-hover:bg-transparent" />
             <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-white text-2xl font-bold mb-3">INDUSTRIAL</h3>
+              <h3 className="text-white text-2xl font-bold mb-3">ELECTRIC</h3>
               <div className="flex items-center text-white/90 text-sm font-semibold tracking-wide uppercase group-hover:text-white transition-colors">
                 <span className="w-4 h-[2px] bg-white mr-3"></span>
                 View Products
               </div>
             </div>
             <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-xl" alt="Industrial" />
+              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-xl" alt="Electric" />
             </div>
           </a>
 
           <a href="#" className="group block relative h-64 bg-[#f5f5f5] overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent" />
             <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-[#1a1a1a] text-2xl font-bold mb-3">ACCESSORIES</h3>
+              <h3 className="text-[#1a1a1a] text-2xl font-bold mb-3">KNITTING</h3>
               <div className="flex items-center text-[#1a1a1a]/80 text-sm font-semibold tracking-wide uppercase group-hover:text-[#1a1a1a] transition-colors">
                 <span className="w-4 h-[2px] bg-[#1a1a1a] mr-3"></span>
                 View Products
               </div>
             </div>
             <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-               <img src="/images/photo_5771629550210060536_x.jpg" className="w-full h-full object-contain mix-blend-multiply" alt="Accessories" />
+               <img src="/images/photo_5771629550210060536_x.jpg" className="w-full h-full object-contain mix-blend-multiply" alt="Knitting" />
             </div>
           </a>
         </div>
@@ -167,9 +172,14 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-[#1a1a1a] text-[15px] mb-2 px-2">{product.title}</h3>
               <p className="text-xs text-gray-400 font-medium tracking-wider mb-6 uppercase">{product.sku}</p>
-              <button className="bg-[#1a1a1a] hover:bg-[#333] text-white text-xs font-bold uppercase tracking-widest py-3 px-8 w-full mt-auto transition-colors">
+              <a 
+                href={`https://wa.me/233244749719?text=${encodeURIComponent(`Hello Malit Machines, I am interested in the ${product.title} (SKU: ${product.sku}). Could you please provide more information and pricing?`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#1a1a1a] hover:bg-[#333] text-white text-xs font-bold uppercase tracking-widest py-3 px-8 w-full mt-auto transition-colors block text-center"
+              >
                 Inquire Now
-              </button>
+              </a>
             </div>
           ))}
         </div>
