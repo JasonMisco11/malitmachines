@@ -146,23 +146,23 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {featuredProducts.map((product, index) => (
-            <div key={index} className="group border border-gray-100 hover:border-gray-200 p-6 flex flex-col items-center text-center transition-shadow hover:shadow-lg bg-white">
-              <div className="h-48 w-full mb-6 relative overflow-hidden">
+            <div key={index} className="group border border-gray-100 hover:border-gray-200 p-3 sm:p-6 flex flex-col items-center text-center transition-shadow hover:shadow-lg bg-white">
+              <div className="h-32 sm:h-48 w-full mb-3 sm:mb-6 relative overflow-hidden">
                 <img 
                   src={product.src} 
                   alt={product.title}
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="font-bold text-[#1a1a1a] text-[15px] mb-2 px-2">{product.title}</h3>
-              <p className="text-xs text-gray-400 font-medium tracking-wider mb-6 uppercase">{product.sku}</p>
+              <h3 className="font-bold text-[#1a1a1a] text-[12px] sm:text-[15px] mb-1 sm:mb-2 px-1 line-clamp-3">{product.title}</h3>
+              <p className="text-[10px] sm:text-xs text-gray-400 font-medium tracking-wider mb-3 sm:mb-6 uppercase">{product.sku}</p>
               <a 
                 href={`https://wa.me/233244749719?text=${encodeURIComponent(`Hello Malit Machines, I am interested in the ${product.title} (SKU: ${product.sku}). Could you please provide more information and pricing?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1a1a1a] hover:bg-[#333] text-white text-xs font-bold uppercase tracking-widest py-3 px-8 w-full mt-auto transition-colors block text-center"
+                className="bg-[#1a1a1a] hover:bg-[#333] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest py-2 sm:py-3 px-2 sm:px-8 w-full mt-auto transition-colors block text-center"
               >
                 Inquire Now
               </a>
