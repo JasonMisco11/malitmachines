@@ -91,64 +91,64 @@ export default function Home() {
       </section>
 
       {/* Featured Categories (3 Blocks) */}
-      <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <a href="#gallery" className="group block relative h-64 bg-[#222] overflow-hidden flex items-center">
-            <div className="absolute inset-0 bg-black/40 z-10 transition-colors group-hover:bg-black/20" />
-            <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-white text-2xl font-bold mb-3">MANUAL</h3>
-              <div className="flex items-center text-white/80 text-sm font-semibold tracking-wide uppercase group-hover:text-white transition-colors">
-                <span className="w-4 h-[2px] bg-[#ab8b65] mr-3"></span>
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          <a href="#gallery" className="group block relative h-56 sm:h-72 bg-[#222] overflow-hidden flex items-center rounded-xl sm:rounded-none shadow-md sm:shadow-none">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 transition-opacity group-hover:opacity-70" />
+            <div className="relative z-20 p-6 sm:p-10 w-2/3">
+              <h3 className="text-white text-3xl sm:text-3xl font-black mb-2 sm:mb-4 tracking-tight">MANUAL</h3>
+              <div className="flex items-center text-[#ab8b65] text-xs sm:text-sm font-bold tracking-widest uppercase group-hover:text-white transition-colors">
+                <span className="w-8 h-[2px] bg-[#ab8b65] mr-3 group-hover:bg-white transition-colors"></span>
                 View Products
               </div>
             </div>
-            <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-              <img src="/images/mm2.webp" className="w-full h-full object-contain opacity-80" alt="Manual" />
+            <div className="absolute right-[-10%] sm:right-[-20%] top-1/2 -translate-y-1/2 w-[65%] sm:w-3/4 h-[90%] sm:h-3/4 transition-transform duration-700 group-hover:scale-105 group-hover:-translate-x-4">
+              <img src="/images/mm2.webp" className="w-full h-full object-contain opacity-90 drop-shadow-2xl" alt="Manual" />
             </div>
           </a>
 
-          <a href="#gallery" className="group block relative h-64 bg-[#c8102e] overflow-hidden flex items-center">
-            <div className="absolute inset-0 bg-black/10 z-10 transition-colors group-hover:bg-transparent" />
-            <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-white text-2xl font-bold mb-3">AUTOMATIC</h3>
-              <div className="flex items-center text-white/90 text-sm font-semibold tracking-wide uppercase group-hover:text-white transition-colors">
-                <span className="w-4 h-[2px] bg-white mr-3"></span>
+          <a href="#gallery" className="group block relative h-56 sm:h-72 bg-[#c8102e] overflow-hidden flex items-center rounded-xl sm:rounded-none shadow-md sm:shadow-none">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/10 to-transparent z-10 transition-opacity group-hover:opacity-0" />
+            <div className="relative z-20 p-6 sm:p-10 w-2/3">
+              <h3 className="text-white text-3xl sm:text-3xl font-black mb-2 sm:mb-4 tracking-tight">AUTOMATIC</h3>
+              <div className="flex items-center text-white/90 text-xs sm:text-sm font-bold tracking-widest uppercase group-hover:text-white transition-colors">
+                <span className="w-8 h-[2px] bg-white mr-3"></span>
                 View Products
               </div>
             </div>
-            <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-xl" alt="Automatic" />
+            <div className="absolute right-[-10%] sm:right-[-20%] top-1/2 -translate-y-1/2 w-[65%] sm:w-3/4 h-[90%] sm:h-3/4 transition-transform duration-700 group-hover:scale-105 group-hover:-translate-x-4">
+              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-2xl" alt="Automatic" />
             </div>
           </a>
 
-          <a href="#gallery" className="group block relative h-64 bg-fff overflow-hidden flex items-center">
-            <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent" />
-            <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-[#1a1a1a] text-2xl font-bold mb-3">KNITTING</h3>
-              <div className="flex items-center text-[#1a1a1a]/80 text-sm font-semibold tracking-wide uppercase group-hover:text-[#1a1a1a] transition-colors">
-                <span className="w-4 h-[2px] bg-[#1a1a1a] mr-3"></span>
+          <a href="#gallery" className="group block relative h-56 sm:h-72 bg-fff overflow-hidden flex items-center rounded-xl sm:rounded-none shadow-md sm:shadow-none">
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent z-10 transition-opacity group-hover:opacity-0" />
+            <div className="relative z-20 p-6 sm:p-10 w-2/3">
+              <h3 className="text-[#1a1a1a] text-3xl sm:text-3xl font-black mb-2 sm:mb-4 tracking-tight">KNITTING</h3>
+              <div className="flex items-center text-[#1a1a1a]/80 text-xs sm:text-sm font-bold tracking-widest uppercase group-hover:text-[#1a1a1a] transition-colors">
+                <span className="w-8 h-[2px] bg-[#c8102e] mr-3 transition-colors"></span>
                 View Products
               </div>
             </div>
-            <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-               <img src="/images/knitting-image.jpeg" className="w-full h-full object-contain mix-blend-multiply" alt="Knitting" />
+            <div className="absolute right-[-10%] sm:right-[-20%] top-1/2 -translate-y-1/2 w-[65%] sm:w-3/4 h-[90%] sm:h-3/4 transition-transform duration-700 group-hover:scale-105 group-hover:-translate-x-4">
+               <img src="/images/knitting-image.jpeg" className="w-full h-full object-contain mix-blend-multiply drop-shadow-xl" alt="Knitting" />
             </div>
           </a>
         </div>
       </section>
 
       {/* Machine Gallery Grid */}
-      <section className="py-16 sm:py-20 max-w-7xl mx-auto px-5 sm:px-8" id="gallery">
+      <section className="py-16 sm:py-20 max-w-7xl mx-auto px-3 sm:px-8" id="gallery">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-widest mb-4">Machine Gallery</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base px-2">
             Browse our full catalog of high-quality sewing and interlock machines. Find the perfect fit for your craft.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
           {featuredProducts.map((product, index) => (
-            <div key={index} className="group border border-gray-100 hover:border-gray-200 p-3 sm:p-6 flex flex-col items-center text-center transition-shadow hover:shadow-lg bg-white">
+            <div key={index} className="group border border-gray-100 hover:border-gray-200 p-2 sm:p-6 flex flex-col items-center text-center transition-shadow hover:shadow-lg bg-white">
               <div className="h-32 sm:h-48 w-full mb-3 sm:mb-6 relative overflow-hidden">
                 <img 
                   src={product.src} 
@@ -156,13 +156,13 @@ export default function Home() {
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="font-bold text-[#1a1a1a] text-[12px] sm:text-[15px] mb-1 sm:mb-2 px-1 line-clamp-3">{product.title}</h3>
-              <p className="text-[10px] sm:text-xs text-gray-400 font-medium tracking-wider mb-3 sm:mb-6 uppercase">{product.sku}</p>
+              <h3 className="font-bold text-[#1a1a1a] text-[12px] sm:text-[15px] mb-1 sm:mb-2 px-1 line-clamp-3 leading-snug">{product.title}</h3>
+              <p className="text-[9px] sm:text-xs text-gray-400 font-medium tracking-wider mb-3 sm:mb-6 uppercase">{product.sku}</p>
               <a 
                 href={`https://wa.me/233244749719?text=${encodeURIComponent(`Hello Malit Machines, I am interested in the ${product.title} (SKU: ${product.sku}). Could you please provide more information and pricing?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1a1a1a] hover:bg-[#333] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest py-2 sm:py-3 px-2 sm:px-8 w-full mt-auto transition-colors block text-center"
+                className="bg-[#1a1a1a] hover:bg-[#333] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest py-2.5 sm:py-3 px-1 sm:px-8 w-full mt-auto transition-colors block text-center rounded-sm sm:rounded-none"
               >
                 Inquire Now
               </a>
