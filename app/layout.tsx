@@ -12,6 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+
 export const metadata: Metadata = {
   title: "Malit Machines — Premium Sewing Machines",
   description: "Your trusted source for quality sewing machines. Visit our showroom or call us today for expert advice and the best deals.",
@@ -23,7 +25,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <FloatingWhatsApp />
+      </body>
     </html>
   );
 }
