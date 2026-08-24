@@ -1,4 +1,6 @@
 import React from 'react';
+import SaveContactButton from './components/SaveContactButton';
+import CallbackForm from './components/CallbackForm';
 
 export default function Home() {
   const featuredProducts = [
@@ -17,7 +19,7 @@ export default function Home() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
             </svg>
-            <span>+233 447 49719 (8am-6pm GMT)</span>
+            <span>0244749719 | 0209929990 (WhatsApp available)</span>
           </div>
           <div className="hidden sm:flex items-center gap-6">
             <a href="#" className="hover:text-gray-300">Sign In</a>
@@ -25,7 +27,7 @@ export default function Home() {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
               Wishlist
             </a>
-            <a href="#" className="hover:text-gray-300">Quick Order</a>
+            <SaveContactButton />
           </div>
         </div>
       </div>
@@ -71,19 +73,18 @@ export default function Home() {
             <h1 className="text-4xl sm:text-6xl font-bold uppercase tracking-tight mb-4">
               Malit Machines
             </h1>
-            <p className="text-gray-400 text-lg sm:text-xl font-medium tracking-widest uppercase mb-8">
-              Born from a classic
+            <p className="text-[#ab8b65] text-lg sm:text-xl font-medium tracking-widest uppercase mb-4">
+              Arguably the best supplier in Ghana
             </p>
-            <div className="flex items-center justify-center lg:justify-start gap-3 mb-10">
-              <span className="text-3xl font-bold text-white">$1,200.00</span>
-              <span className="text-lg text-gray-500 line-through">$1,450.00</span>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <p className="text-gray-300 text-sm sm:text-base mb-8 max-w-md mx-auto lg:mx-0">
+              We sell sewing machines of all kinds: manual, automatic, and knitting machines. The best machines from the best supplier.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
               <a href="#" className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center">
                 Find Out More
               </a>
               <a href="#" className="bg-[#222] hover:bg-[#333] border border-[#333] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center">
-                Add to Cart
+                Inquire Now
               </a>
             </div>
           </div>
@@ -165,32 +166,55 @@ export default function Home() {
                 />
               </div>
               <h3 className="font-bold text-[#1a1a1a] text-[15px] mb-2 px-2">{product.title}</h3>
-              <p className="text-xs text-gray-400 font-medium tracking-wider mb-4 uppercase">{product.sku}</p>
-              <div className="font-bold text-lg mb-6">{product.price}</div>
+              <p className="text-xs text-gray-400 font-medium tracking-wider mb-6 uppercase">{product.sku}</p>
               <button className="bg-[#1a1a1a] hover:bg-[#333] text-white text-xs font-bold uppercase tracking-widest py-3 px-8 w-full mt-auto transition-colors">
-                Add to Cart
+                Inquire Now
               </button>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* Inquiry Section */}
       <section className="bg-[#fcf8f6] py-16 border-y border-gray-100">
         <div className="max-w-3xl mx-auto px-5 text-center">
-          <h2 className="text-2xl font-bold text-[#1a1a1a] mb-3">Join Our Newsletter</h2>
-          <p className="text-gray-500 text-sm mb-8">Receive updates on new machine arrivals, service tips, and exclusive deals.</p>
-          <form className="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
-            <input 
-              type="email" 
-              placeholder="Email Address" 
-              className="flex-1 border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-[#ab8b65]"
-              required
-            />
-            <button type="submit" className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-3 px-8 transition-colors">
-              Subscribe
-            </button>
-          </form>
+          <h2 className="text-2xl font-bold text-[#1a1a1a] mb-3">Need Help Choosing a Machine?</h2>
+          <p className="text-gray-500 text-sm mb-8">Leave your contact details and our experts will get back to you with custom advice and pricing.</p>
+          <CallbackForm />
+        </div>
+      </section>
+
+      {/* Location / Map Section */}
+      <section className="border-t border-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="p-10 lg:p-20 flex flex-col justify-center bg-[#fcf8f6]">
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-widest mb-6">Visit Our Showroom</h2>
+            <p className="text-gray-500 mb-8 max-w-md leading-relaxed text-sm sm:text-base">
+              Come see our full range of manual, automatic, and knitting machines in person. Our experts are ready to help you find the perfect fit.
+            </p>
+            <div className="space-y-4 text-sm font-medium text-gray-700">
+              <div className="flex items-center gap-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#ab8b65]"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                16 Basswood Street, Madina Doku Clinic, Accra, Ghana
+              </div>
+              <div className="flex items-center gap-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#ab8b65]"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Mon - Sat: 8:00 AM – 6:00 PM
+              </div>
+            </div>
+          </div>
+          <div className="h-[400px] lg:h-auto min-h-[400px] relative bg-gray-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-0.17!3d5.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDAnMTIuMCJOIDDCsDEwJzEyLjAiVw!5e0!3m2!1sen!2sgh!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0, position: 'absolute', inset: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Malit Machines Location"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -207,11 +231,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-[#ab8b65]"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                  +233 447 49719
+                  0244749719 | 0209929990
                 </li>
                 <li className="flex items-center gap-3">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-[#ab8b65]"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                  info@malitmachines.com
+                  imranmalit@gmail.com
                 </li>
               </ul>
             </div>
