@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default function SaveContactButton() {
+export default function SaveContactButton({ className }: { className?: string }) {
   const handleSaveContact = () => {
     // Generate vCard
     const vcard = `BEGIN:VCARD
@@ -38,9 +38,9 @@ END:VCARD`;
   return (
     <button 
       onClick={handleSaveContact} 
-      className="flex items-center gap-1.5 hover:text-gray-300 transition-colors cursor-pointer"
+      className={className || "flex items-center gap-1.5 hover:text-gray-300 transition-colors cursor-pointer"}
     >
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className ? "shrink-0" : ""}>
         <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
         <polyline points="17 21 17 13 7 13 7 21"></polyline>
         <polyline points="7 3 7 8 15 8"></polyline>

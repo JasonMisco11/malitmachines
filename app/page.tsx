@@ -22,11 +22,6 @@ export default function Home() {
             <span>0244749719 | 0209929990 (WhatsApp available)</span>
           </div>
           <div className="hidden sm:flex items-center gap-6">
-            <a href="#" className="hover:text-gray-300">Sign In</a>
-            <a href="#" className="hover:text-gray-300 flex items-center gap-1">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-              Wishlist
-            </a>
             <SaveContactButton />
           </div>
         </div>
@@ -51,17 +46,7 @@ export default function Home() {
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Deals</a>
             </div>
 
-            {/* Right Icons */}
-            <div className="flex items-center gap-6">
-              <a href="#" className="hidden sm:flex items-center gap-2 text-sm font-semibold hover:text-[#c8102e]">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                My Account
-              </a>
-              <div className="w-px h-6 bg-gray-200 hidden sm:block"></div>
-              <a href="#" className="flex items-center hover:text-[#c8102e]">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-              </a>
-            </div>
+            {/* Right Icons removed */}
           </div>
         </div>
       </nav>
@@ -80,9 +65,7 @@ export default function Home() {
               We sell sewing machines of all kinds: manual, automatic, and knitting machines. The best machines from the best supplier.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
-              <a href="#" className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto text-center">
-                Find Out More
-              </a>
+              <SaveContactButton className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto flex justify-center items-center gap-2" />
               <a 
                 href={`https://wa.me/233244749719?text=${encodeURIComponent("Hello Malit Machines, I would like to inquire about your sewing machines.")}`}
                 target="_blank"
