@@ -85,9 +85,9 @@ export default function Home() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-white/20 blur-[100px] rounded-full pointer-events-none"></div>
             
             <img 
-              src="/api/hero" 
+              src="https://res.cloudinary.com/dm2jtckdc/image/upload/v1787577953/hero_up4lvk.png" 
               alt="Featured Sewing Machine" 
-              className="relative z-10 max-w-full h-auto drop-shadow-2xl mix-blend-screen sm:mix-blend-normal"
+              className="relative z-10 max-w-full h-auto drop-shadow-2xl"
               style={{ maxHeight: '500px', objectFit: 'contain' }}
             />
           </div>
