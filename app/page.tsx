@@ -238,23 +238,29 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">About Us</h4>
-              <ul className="space-y-3 text-sm text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Showroom</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Testimonials</a></li>
-              </ul>
+              <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">About Malit Machines</h4>
+              <div className="text-sm text-gray-300 leading-relaxed space-y-3">
+                <p className="text-white font-semibold">The Machines Behind Great Work.</p>
+                <p>Arguably the best supplier in Ghana.</p>
+                <p>
+                  We provide quality sewing machines built for precision, reliability, and performance. From <strong className="text-white">manual to automatic and knitting machines</strong>, we have the right equipment for your craft.
+                </p>
+                <p>We don't just sell machines — <strong className="text-white">we help you find the right machine for the work you do.</strong></p>
+              </div>
             </div>
 
             <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">Resources</h4>
-              <ul className="space-y-3 text-sm text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">Financing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Service & Repair</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Warranty Info</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Manuals</a></li>
+              <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">Shop With Confidence</h4>
+              <ul className="space-y-2 text-sm text-gray-300 list-disc list-inside">
+                <li>Manual Sewing Machines</li>
+                <li>Automatic Sewing Machines</li>
+                <li>Knitting Machines</li>
+                <li>For Professionals & Businesses</li>
+                <li>Competitive Prices</li>
               </ul>
+              <p className="mt-6 text-[#ab8b65] font-semibold text-sm italic">
+                Malit Machines — Powering Your Craft.
+              </p>
             </div>
 
             <div>
