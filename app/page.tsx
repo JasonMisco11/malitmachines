@@ -32,17 +32,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#" className="flex-shrink-0">
+            <a href="/" className="flex-shrink-0">
               <img src="/images/logo.png" alt="Malit Machines Logo" className="h-12 w-auto" />
             </a>
 
             {/* Desktop Categories */}
             <div className="hidden lg:flex items-center gap-8 text-[13px] font-bold tracking-wider text-[#1a1a1a] uppercase">
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Manual</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Electric</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Knitting</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Parts</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Accessories</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Manual</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Automatic</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Knitting</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Parts</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Accessories</a>
               <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Gallery</a>
             </div>
 
@@ -93,7 +93,7 @@ export default function Home() {
       {/* Featured Categories (3 Blocks) */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <a href="#" className="group block relative h-64 bg-[#222] overflow-hidden flex items-center">
+          <a href="#gallery" className="group block relative h-64 bg-[#222] overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/40 z-10 transition-colors group-hover:bg-black/20" />
             <div className="relative z-20 p-8 w-1/2">
               <h3 className="text-white text-2xl font-bold mb-3">MANUAL</h3>
@@ -107,21 +107,21 @@ export default function Home() {
             </div>
           </a>
 
-          <a href="#" className="group block relative h-64 bg-[#c8102e] overflow-hidden flex items-center">
+          <a href="#gallery" className="group block relative h-64 bg-[#c8102e] overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/10 z-10 transition-colors group-hover:bg-transparent" />
             <div className="relative z-20 p-8 w-1/2">
-              <h3 className="text-white text-2xl font-bold mb-3">ELECTRIC</h3>
+              <h3 className="text-white text-2xl font-bold mb-3">AUTOMATIC</h3>
               <div className="flex items-center text-white/90 text-sm font-semibold tracking-wide uppercase group-hover:text-white transition-colors">
                 <span className="w-4 h-[2px] bg-white mr-3"></span>
                 View Products
               </div>
             </div>
             <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-xl" alt="Electric" />
+              <img src="/images/mm1.webp" className="w-full h-full object-contain drop-shadow-xl" alt="Automatic" />
             </div>
           </a>
 
-          <a href="#" className="group block relative h-64 bg-fff overflow-hidden flex items-center">
+          <a href="#gallery" className="group block relative h-64 bg-fff overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent" />
             <div className="relative z-20 p-8 w-1/2">
               <h3 className="text-[#1a1a1a] text-2xl font-bold mb-3">KNITTING</h3>
@@ -258,20 +258,20 @@ export default function Home() {
                 <li>Competitive Prices</li>
               </ul>
               <p className="mt-6 text-[#ab8b65] font-semibold text-sm italic">
-                Malit Machines — Powering Your Craft.
+                Malit Machines - Powering Your Craft.
               </p>
             </div>
 
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">Follow Us</h4>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#222] flex items-center justify-center hover:bg-[#c8102e] transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.33 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
                 </a>
               </div>
@@ -281,8 +281,8 @@ export default function Home() {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
             <p>© {new Date().getFullYear()} Malit Machines. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-gray-300">Privacy Policy</a>
-              <a href="#" className="hover:text-gray-300">Terms of Service</a>
+              <a href="/privacy-policy" className="hover:text-gray-300">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-gray-300">Terms of Service</a>
             </div>
           </div>
         </div>
