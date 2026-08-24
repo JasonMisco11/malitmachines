@@ -80,11 +80,14 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="order-1 lg:order-2 flex justify-center relative w-full">
+            {/* Blurred glowing backdrop matching the typical image color to soften edges */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-white/20 blur-[100px] rounded-full pointer-events-none"></div>
+            
             <img 
               src="/api/hero" 
               alt="Featured Sewing Machine" 
-              className="max-w-full h-auto drop-shadow-2xl"
+              className="relative z-10 max-w-full h-auto drop-shadow-2xl mix-blend-screen sm:mix-blend-normal"
               style={{ maxHeight: '500px', objectFit: 'contain' }}
             />
           </div>
