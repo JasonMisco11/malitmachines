@@ -1,14 +1,10 @@
 import React from 'react';
 import SaveContactButton from './components/SaveContactButton';
 import CallbackForm from './components/CallbackForm';
+import productsData from '../public/images/machines/products.json';
 
 export default function Home() {
-  const featuredProducts = [
-    { src: '/images/mm1.webp', title: 'Industrial Lockstitch Machine', sku: 'MM_IND_LS01', price: '$850.00' },
-    { src: '/images/mm3.webp', title: 'Heavy Duty Overlocker', sku: 'MM_HD_OVL02', price: '$1,200.00' },
-    { src: '/images/mm2.webp', title: 'Domestic Computerized Sewing', sku: 'MM_DOM_CS03', price: '$450.00' },
-    { src: '/images/photo_5771629550210060536_x.jpg', title: 'Portable Embroidery Machine', sku: 'MM_PORT_EM04', price: '$950.00' }
-  ];
+  const featuredProducts = productsData;
 
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans text-[#1a1a1a]">
@@ -47,7 +43,7 @@ export default function Home() {
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Knitting</a>
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Parts</a>
               <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Accessories</a>
-              <a href="#" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Deals</a>
+              <a href="#gallery" className="hover:text-[#c8102e] transition-colors py-8 border-b-2 border-transparent hover:border-[#c8102e]">Gallery</a>
             </div>
 
             {/* Right Icons removed */}
@@ -125,7 +121,7 @@ export default function Home() {
             </div>
           </a>
 
-          <a href="#" className="group block relative h-64 bg-[#f5f5f5] overflow-hidden flex items-center">
+          <a href="#" className="group block relative h-64 bg-fff overflow-hidden flex items-center">
             <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent" />
             <div className="relative z-20 p-8 w-1/2">
               <h3 className="text-[#1a1a1a] text-2xl font-bold mb-3">KNITTING</h3>
@@ -135,18 +131,18 @@ export default function Home() {
               </div>
             </div>
             <div className="absolute right-[-20%] top-1/2 -translate-y-1/2 w-3/4 h-3/4 transition-transform duration-500 group-hover:scale-110">
-               <img src="/images/photo_5771629550210060536_x.jpg" className="w-full h-full object-contain mix-blend-multiply" alt="Knitting" />
+               <img src="/images/knitting-image.jpeg" className="w-full h-full object-contain mix-blend-multiply" alt="Knitting" />
             </div>
           </a>
         </div>
       </section>
 
-      {/* Featured Products Grid */}
-      <section className="py-16 sm:py-20 max-w-7xl mx-auto px-5 sm:px-8">
+      {/* Machine Gallery Grid */}
+      <section className="py-16 sm:py-20 max-w-7xl mx-auto px-5 sm:px-8" id="gallery">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-widest mb-4">Featured Products</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-widest mb-4">Machine Gallery</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">
-            Malit Machines has one of the most knowledgeable and respected staffs in the sewing industry.
+            Browse our full catalog of high-quality sewing and interlock machines. Find the perfect fit for your craft.
           </p>
         </div>
 
