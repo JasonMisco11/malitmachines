@@ -6,7 +6,8 @@ async function downloadImages() {
   const pages = [
     'https://dulipu.en.made-in-china.com/product-group/zvjaULdCSZIV/Interlock-Sewing-Machine-catalog-1.html',
     'https://dulipu.en.made-in-china.com/product-group/zvjaULdCSZIV/Interlock-Sewing-Machine-catalog-2.html',
-    'https://dulipu.en.made-in-china.com/product-group/zvjaULdCSZIV/Interlock-Sewing-Machine-catalog-3.html'
+    'https://dulipu.en.made-in-china.com/product-group/zvjaULdCSZIV/Interlock-Sewing-Machine-catalog-3.html',
+    'https://dulipu.en.made-in-china.com/product/keywordSearch?username=&pageNumber=8&pageSize=24&viewType=1&isByGroup=&pageUrlFrom=1&productGroupOrCatId=&searchKeyword=ewing+Machine&searchKeywordSide=&searchKeywordList=&selectedFeaturedType=&selectedSpotlightId=&viewPageSize=24&pbv_id=1k0q93b92dba&bv_id=1k0q93h0q298'
   ];
 
   const destDir = path.join(__dirname, 'public', 'images', 'machines');
