@@ -63,10 +63,10 @@ export default function Home() {
               Malit Machines
             </h1>
             <p className="text-[#ab8b65] text-lg sm:text-xl font-medium tracking-widest uppercase mb-4">
-              Arguably the best supplier in Ghana
+              The Number 1 supplier in Ghana
             </p>
             <p className="text-gray-300 text-sm sm:text-base mb-8 max-w-md mx-auto lg:mx-0">
-              We sell sewing machines of all kinds: manual, automatic, and knitting machines. The best machines from the best supplier.
+              From manual and automatic sewing machines to knitting machines, Malit Machines supplies reliable equipment for tailors, fashion designers, manufacturers, and entrepreneurs across Ghana.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
               <SaveContactButton className="bg-[#ab8b65] hover:bg-[#927552] text-white text-sm font-bold uppercase tracking-widest py-4 px-8 transition-colors w-full sm:w-auto flex justify-center items-center gap-2" />
